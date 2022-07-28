@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Job Listing</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Job Listing</h1>
+    </div>
+    <section class="container">
+        <form id="job-form" class="form">
+            <p class="last-date"></p>
+            <!-- Main Three Rows -->
+            <div class="Main">
+                <div class="row1">
+                    <label for="fullname">Full Name<br>
+                    </label>
+                    <input type="text" name="fullname" id="fullname">
+                </div>
+
+                <div class="row2">
+                    <label for="Current Employment Status">Current Employment Status</label>
+                    <select name="Status" id="Status">
+                        <option value="select an option">Select an option</option>
+                        <option value="fulltime">Fulltime</option>
+                        <option value="Part-time">Part-Time</option>
+                        <option value="Permanent">Permanent</option>
+                    </select>
+                </div>
+
+                <div class="row3">
+                    <label for="qualifications">Enter Your Qualifications</label>
+                    <textarea name="quali" id="quali" cols="35" rows="2"></textarea>
+                </div>
+
+            </div>
+
+            <!-- Check box  -->
+
+            <div class="check-box">
+                <input type="checkbox" name="conditions" id="conditions">
+                <label for="checkbox"> I accept the Terms and Conditions</label>
+            </div>
+
+
+            <!-- Buttons -->
+            <div class="buttons">
+                <!-- <input type="Save" value="Save"> -->
+                <button class="save"> Save </button>
+                <button type="submit" class="submit" >Submit</button>
+            </div>
+
+
+        </form>
+        <!-- alert  -->
+        <div class="alert">
+            <div class="alert-content">
+                <p>Succesfully submitted. Thank you
+                <button class="close">
+                    <i class="bi bi-x-square"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!--  Footer -->
+
+    <footer class="footer">
+        <p>&copy;Copyright John Baby </p>
+
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
